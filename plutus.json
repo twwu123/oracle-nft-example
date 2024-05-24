@@ -1,0 +1,146 @@
+{
+  "preamble": {
+    "title": "script/oracle-nft-example",
+    "description": "Aiken contracts for project 'script/oracle-nft-example'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.0.20-alpha+unknown"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "one_time_minting_policy.one_time_token",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "parameters": [
+        {
+          "title": "utxo",
+          "schema": {
+            "$ref": "#/definitions/aiken~1transaction~1OutputReference"
+          }
+        }
+      ],
+      "compiledCode": "58660100003232323232322225333005323322323300100100322533300c00114a026464a666018600a00429444cc010010004c03c008c034004dd61800980298009802801119baf300230060010052300900114984d9588c00cdd5000ab9a5573caae7d5d0aba21",
+      "hash": "b16fa0c7db5b523c4f7f0842752116694caee286aff9d791003a1ed6"
+    },
+    {
+      "title": "spending_script1.script1",
+      "datum": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "parameters": [
+        {
+          "title": "oracle_nft",
+          "schema": {
+            "$ref": "#/definitions/Tuple$ByteArray_ByteArray"
+          }
+        }
+      ],
+      "compiledCode": "5903ab0100003232323232323232322322225333008323232323232533300e3370e90001806800899191919191991191980080080191299980d0008a50132325333019300500214a2266008008002603c00460380026eb0c00cc044c02cc04403094ccc050cdd79806180900098059809001899b8848202b78810ccc024dd598059809000a450048810014a066464464a66602c66e1d2000001132323232533301d302000213232498c020008c01c00c58c078004c078008c070004c05000858c0500048c94ccc054cdc3a4000002264646464a666038603e004264649319299980d99b87480000044c8c94ccc080c08c0084c92632533301e3370e9000000899192999811981300109924c601c0022c604800260380042a66603c66e1d200200113232323232325333027302a002149858dd6981400098140011bad30260013026002375a604800260380042c60380022c604200260320062a66603666e1d20020011533301e301900314985858c064008c01c00c58c074004c074008c06c004c04c00858c04c0048c94ccc050cdc3a400000226464a66603260380042930b1bae301a0013012002153330143370e900100089919299980c980e0010a4c2c6eb8c068004c04800858c048004004c8c94ccc04ccdc3a40000022c2a66602666e1d20020011613018301100230110013001300f3008300f00223016301730170013014001300c0011632533300e3370e90000008b0a99980719b874800800454ccc044008530103d87a800013374a900019809180980125eb8058cc8c004004894ccc04800452000133700900119801001180a80080099198008008019129998088008a5eb804c8c94ccc040cdc39998029bab3007300e3007300e002375c60220186eb8c048031200213301400233004004001133004004001301500230130012223233223253330123370e9001000880109bad3017301000330100023253330103370e90010008a6103d87a8000132323300100100222533301600114c103d87a800013232323253330173371e014004266e9520003301b375000297ae0133006006003375a60300066eb8c058008c068008c060004dd5980a98070011807000a4000646600200200844a6660260022980103d87a800013232323253330143371e010004266e95200033018374c00297ae01330060060033756602a0066eb8c04c008c05c008c054004dd61800980418011804001918079808000918070008a4c26cac6466ec0c028004c028c02c004dd6000918029baa001230033754002ae6955ceaab9e5573eae815d0aba21",
+      "hash": "cccc9df6f07c5b404aa17bf4242555685da5b7efd62fa43c02cce1e4"
+    },
+    {
+      "title": "spending_script2.script2",
+      "datum": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "parameters": [
+        {
+          "title": "oracle_nft",
+          "schema": {
+            "$ref": "#/definitions/Tuple$ByteArray_ByteArray"
+          }
+        }
+      ],
+      "compiledCode": "5903ab0100003232323232323232322322225333008323232323232533300e3370e90001806800899191919191991191980080080191299980d0008a50132325333019300500214a2266008008002603c00460380026eb0c00cc044c02cc04403094ccc050cdd79806180900098061809001899b8848202b78810ccc024dd598059809000a450048810014a066464464a66602c66e1d2000001132323232533301d302000213232498c020008c01c00c58c078004c078008c070004c05000858c0500048c94ccc054cdc3a4000002264646464a666038603e004264649319299980d99b87480000044c8c94ccc080c08c0084c92632533301e3370e9000000899192999811981300109924c601c0022c604800260380042a66603c66e1d200200113232323232325333027302a002149858dd6981400098140011bad30260013026002375a604800260380042c60380022c604200260320062a66603666e1d20020011533301e301900314985858c064008c01c00c58c074004c074008c06c004c04c00858c04c0048c94ccc050cdc3a400000226464a66603260380042930b1bae301a0013012002153330143370e900100089919299980c980e0010a4c2c6eb8c068004c04800858c048004004c8c94ccc04ccdc3a40000022c2a66602666e1d20020011613018301100230110013001300f3008300f00223016301730170013014001300c0011632533300e3370e90000008b0a99980719b874800800454ccc044008530103d87a800013374a900019809180980125eb8058cc8c004004894ccc04800452000133700900119801001180a80080099198008008019129998088008a5eb804c8c94ccc040cdc39998029bab3007300e3007300e002375c60220186eb8c048031200213301400233004004001133004004001301500230130012223233223253330123370e9001000880109bad3017301000330100023253330103370e90010008a6103d87a8000132323300100100222533301600114c103d87a800013232323253330173371e014004266e9520003301b375000297ae0133006006003375a60300066eb8c058008c068008c060004dd5980a98070011807000a4000646600200200844a6660260022980103d87a800013232323253330143371e010004266e95200033018374c00297ae01330060060033756602a0066eb8c04c008c05c008c054004dd61800980418011804001918079808000918070008a4c26cac6466ec0c028004c028c02c004dd6000918029baa001230033754002ae6955ceaab9e5573eae815d0aba21",
+      "hash": "4f9225471a6e55f4e1d0262183a127ce89cd94422b7dd875436c5737"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "Tuple$ByteArray_ByteArray": {
+      "title": "Tuple",
+      "dataType": "list",
+      "items": [
+        {
+          "$ref": "#/definitions/ByteArray"
+        },
+        {
+          "$ref": "#/definitions/ByteArray"
+        }
+      ]
+    },
+    "aiken/transaction/OutputReference": {
+      "title": "OutputReference",
+      "description": "An `OutputReference` is a unique reference to an output on-chain. The `output_index`\n corresponds to the position in the output list of the transaction (identified by its id)\n that produced that output",
+      "anyOf": [
+        {
+          "title": "OutputReference",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "transaction_id",
+              "$ref": "#/definitions/aiken~1transaction~1TransactionId"
+            },
+            {
+              "title": "output_index",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/TransactionId": {
+      "title": "TransactionId",
+      "description": "A unique transaction identifier, as the hash of a transaction body. Note that the transaction id\n isn't a direct hash of the `Transaction` as visible on-chain. Rather, they correspond to hash\n digests of transaction body as they are serialized on the network.",
+      "anyOf": [
+        {
+          "title": "TransactionId",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "hash",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

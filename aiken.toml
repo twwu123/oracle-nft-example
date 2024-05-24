@@ -1,0 +1,14 @@
+name = "script/oracle-nft-example"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'script/oracle-nft-example'"
+
+[repository]
+user = "script"
+project = "oracle-nft-example"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.8.0"
+source = "github"
