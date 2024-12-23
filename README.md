@@ -53,3 +53,7 @@ aiken docs
 ## Resources
 
 Find more on the [Aiken's user manual](https://aiken-lang.org).
+
+## Testing
+
+Test
